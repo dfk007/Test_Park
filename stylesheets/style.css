@@ -1,0 +1,323 @@
+<<<<<<< HEAD
+
+/* Custom Fonts -------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+@font-face {
+font-family: 'Coolvetica Compressed Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Coolvetica Compressed Regular'), url('coolvetica compressed rg.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Coolvetica Condensed Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Coolvetica Condensed Regular'), url('coolvetica condensed rg.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Coolvetica Crammed Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Coolvetica Crammed Regular'), url('coolvetica crammed rg.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Coolvetica Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Coolvetica Regular'), url('coolvetica rg.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Coolvetica Regular Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Coolvetica Regular Italic'), url('coolvetica rg it.woff') format('woff');
+}
+
+/* Common CSS -------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+ h1 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font size: 23px
+ }
+ 
+ h2 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 20px
+ }
+ 
+ h3 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 17px
+ }
+ 
+ p {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 15px
+ }
+ 
+ a {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 15px;
+ }
+ 
+ address {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 15px		
+		align: center;
+ }
+
+/* Body CSS -------------------------------- */
+body{
+    background-color: white;
+}
+
+
+/* Header CSS -------------------------------- */
+
+header {
+		margin: auto;
+                margin-bottom: 10px;
+		text-align: center;
+		border-bottom-style: solid;
+		border-bottom-color: #FFD500;
+		background-color: #ff2800;
+}
+
+head {
+	margin: auto;
+	background-color: #ff2800;
+}
+
+#logo {
+	height: 5em;
+	
+}
+
+
+/* Index.html formatting -------------------------------- */
+
+	/* slideshow  */
+
+@keyframes slideshow {
+	10% {left: 0;}
+	30% {left: 0;}
+	50% {left: -49em;}
+	70% {left: -49em;}
+	90% {left: -98em;}
+	100% {left: -98em;}
+}
+
+#SlideshowAndMap {overflow:hidden; width:50%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
+#SlideshowAndMap figure img {width:780px;height:470px;float:left; border-radius: 10px;}
+#SlideshowAndMap figure {position:relative;width:600%;margin:0;left:0;text-align:left;animation:10s slideshow infinite}
+
+.AttEntsImg{
+    width: 33%;
+    height: 450px;
+}
+
+@media screen and (max-width: 767px) {
+	#SlideshowAndMap {
+		overflow: hidden; 
+		width: 100%; 
+		margin: 0 auto;}
+
+	.AttEntsImg{
+    width: 100%;
+    height: 250px;
+}	
+		}
+
+	/*other*/
+#Welcome{
+    text-align: center;
+}
+
+
+#InfoServeImg{
+    width: 50%;
+}
+
+#MainContents {
+	margin: auto;
+	text-align: center;
+}
+
+#AttractionsAndEvents {
+	margin: auto;
+	text-align: center;
+}
+
+#InformationAndServices {
+	margin: auto;
+	text-align: center;
+}
+
+/* attractionsandevents.html formatting -------------------------------- */
+
+	/* Desktop Version */
+@media screen and (min-width: 1490px) {
+.AttractionBox {
+	 display: grid;
+	 grid-row-gap: 25px;
+	 text-align: center;
+	 margin-top: 25px;
+	 margin-bottom: 25px;
+}
+
+#Attraction1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#Attraction2{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#Attraction3{
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+}
+
+	/* Phone Version */
+@media screen and (max-width: 1490px) {
+.AttractionBox {
+	 text-align: center;
+	 margin-top: 25px;
+	 margin-bottom: 25px;
+}
+
+.Attraction{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+}
+
+
+
+	/* Other */
+.AttImg {
+	width: 500px;
+}
+	
+div.Attraction a {
+	border-style: solid;
+	border-radius: 5px;
+	border-color: black;
+	padding: 4px;
+	
+}
+
+#Events {
+	border-top-style: solid;
+	border-top-color: yellow;
+	text-align: center;
+}
+
+
+/* informationandservices.html formatting -------------------------------- */
+
+ul{
+    list-style-type: none;
+}
+
+	/* Desktop Version */
+@media screen and (min-width: 1490px) {
+#Map {
+	margin: auto;
+	text-align: center;
+    float: left;
+    width: 35%;
+	padding-top: 5%;
+	padding-left: 1%;
+}
+
+#Information {
+	text-align: center;
+    margin-left: 35%;
+}
+
+#Services {
+	text-align: center;
+    margin-left: 35%;
+}
+    
+#Services ul li {
+	margin-right: 20px;
+}
+}
+
+	/* Phone Version */
+@media screen and (max-width: 1490px) {
+#Map {
+	margin: auto;
+	text-align: center;
+	margin-left: 20%;
+	width: 60%;
+}
+#Information {
+	text-align: center;
+}
+#Services {
+	text-align: center;
+}
+}
+	/* Other */
+
+
+
+/* Footer Formatting -------------------------------- */
+
+div#SocialFooter {
+		border-top-style: solid;
+		border-top-color: #FFD500;
+		margin: center;
+		text-align: center;
+		background-color: #ff2800;
+}
+
+#FBLOGO {
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+ }
+ 
+ #INSTALOGO {
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+ }
+
+div#InfoFooter {
+	margin: auto;
+	text-align: center;
+	background-color:  #ff2800;
+}
+
+
+
+>>>>>>> 1aafcc229f6d09344b888d60def401d09449d94c

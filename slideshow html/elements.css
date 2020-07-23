@@ -1,0 +1,630 @@
+*
+{ /* so that the white spacing on top is removed */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.flex-container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Common CSS -------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+ h1 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+<<<<<<< HEAD
+		font-size: 23px
+=======
+		font-size: 23px;
+>>>>>>> master
+ }
+
+ h2 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 20px
+ }
+
+ h3 {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 17px
+ }
+
+ p {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 15px
+ }
+
+ a {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+		font-size: 15px;
+ }
+
+ address {
+		font-family: 'Coolvetica Regular';
+		letter-spacing: .5px;
+<<<<<<< HEAD
+		font-size: 15px;		
+		align: center;
+=======
+		font-size: 15px;
+		align-items: center;
+>>>>>>> master
+ }
+
+/* -------------------------------------HEADER----------------------------------------------------- */
+header
+{ /* create the header for use */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #8B0000;
+}
+
+.logo img
+{ /* shift the logo and change size */
+    padding-left: 50px;
+    height: 100%;
+    width: 180px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+nav ul
+{
+    list-style: none
+}
+
+nav ul li
+{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav ul li a
+{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover, nav ul li a:active
+{ /* change the background colour on mouse over the button */
+    background: #DDD;
+    color: black;
+}
+
+button
+{ /* create the button to buy the tickets */
+    padding: 9px 25px;
+    background-color: #00cc00;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover
+{ /* change the background colour on mouse over the button */
+    background: #DDD;
+    color: black;
+}
+
+
+/* -------------------------------------FOOTER----------------------------------------------------- */
+footer
+{ /* create the spacing for the footer */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #8B0000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.notif
+{ /* create the heading on top of the subscribe box */
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px auto;
+}
+
+/* ---------------- the email portion ------------------> */
+footer input[type='email']
+{ /* subscribe here form for the left side of the bar */
+    width: 60vw;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    border: none;
+}
+
+footer input[type='submit']
+{ /* for the right side of the submit bar */
+    border: none;
+    outline: none;
+    border-radius: 0 40px 40px 0;
+    padding: 10px;
+    color: #fff;
+    background: #00cc00;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer input:hover[type='submit']
+{ /* so that the icons will hover when placed over it */
+    background: #ccff99;
+}
+/* ---------------- the tabs in the footer ------------------> */
+footer ul li
+{
+    margin: 40px auto;
+    display: inline-block;
+    list-style-type: none;
+}
+footer ul li a
+{ /* give the tabs some decoration */
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+footer ul li a:hover
+{ /* so that the list has hovering effects */
+    background: #DDD;
+    color: black;
+}
+
+/* ---------------- when downsizing window adjust these --------------- */
+@media(max-width:952px)
+{
+    .notif
+    { /* for the footer header */
+        font-size: 20px;
+    }
+
+    footer input[type='email'], footer input[type='submit']
+    { /* for the footer form */
+        font-size: 20px;
+    }
+
+    footer ul li a
+    { /* for the footer links */
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:780px)
+{
+    .notif
+    { /* for the footer header */
+        font-size: 16px;
+        margin: 30px;
+    }
+
+    footer input[type='email'], footer input[type='submit']
+    { /* for the footer form */
+        font-size: 14px;
+    }
+
+    footer ul li a
+    { /* for the footer links */
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    header
+    {
+        flex-direction: column;
+    }
+
+    button
+    {
+        display: none;
+    }
+
+    nav ul
+    {
+        display: inline-block;
+        padding: 0px 20px;
+        margin-left: 100px;
+    }
+}
+
+@media(max-width:600px){
+    .notif
+    { /* for the footer header */
+        font-size: 15px;
+        margin: 30px;
+    }
+    footer ul li a
+    { /* for the footer links */
+        padding: 5px;
+    }
+    nav ul
+    {
+        display: inline-flex;
+        margin-right: 40px;
+
+    }
+}
+
+@media(max-width:352px){
+    .notif
+    { /* for the footer header */
+        font-size: 10px;
+    }
+}
+/* --------- the logos ------------- */
+#FBLOGO
+{ /* facebook logo */
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+}
+
+#INSTALOGO
+{ /* instagram logo */
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+#TWITTERLOGO
+{ /* twitter logo */
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+#YOUTUBELOGO
+{ /* youtube logo */
+	margin: center;
+	margin-top: 10px;
+	height: 2.5em;
+	width: 2.5em;
+    padding: 5px;
+ }
+
+
+/* -------------------------------------BODY----------------------------------------------------- */
+#contentwrap {
+    margin: 0;
+}
+
+/* --------- Slide Show ------------- */
+@keyframes slideshowAni {
+	10% {left: 0;}
+	30% {left: 0;}
+	50% {left: -100%;}
+	70% {left: -100%;}
+	90% {left: -200%;}
+	100% {left: -200%;}
+}
+
+<<<<<<< HEAD
+#SlideshowAndMap {overflow:hidden; width:100%;margin: 0;}
+#SlideshowAndMap figure img {width:33.33%;height:500px;float:left;}
+#SlideshowAndMap figure {position:relative;width:300%;margin:0;left:0;text-align:left;animation:10s slideshow infinite}
+=======
+#slideshow {
+	 overflow:hidden;
+	 width:100%;
+	 height: 100vh;
+	 position: relative;
+	 margin: 0;
+	 background: #000000;
+}
+
+
+/* #SlideshowAndMap figure img {
+	width:33.33%;
+	height:1000px;
+	float:left;
+}
+#SlideshowAndMap figure {
+	position:relative;
+	width:300%;
+	margin:0;
+	left:0;
+	text-align:left;
+	animation:10s slideshow infinite
+} */
+
+>>>>>>> master
+
+#Welcome{
+	text-align: center;
+	display: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px 10px;
+	background: rgba(139, 0, 0, 0.644);
+	color: #fff;
+}
+
+.slideshow-item {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	animation: cycleImages 31s infinite;
+	/* animation: slideshowAni 10s infinite; */
+
+
+}
+
+.slideshow-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* animation */
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+	animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(1) img {
+	animation-delay: 10s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(1) img {
+	animation-delay: 20s;
+}
+
+.slideshow-item-text {
+	max-width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateY(-50%);
+	background-color: rgba(0,0,0,0.7);
+	color: #fff;
+	padding: 20px 10px;
+}
+
+.slideshow-item-text h5 {
+	font-size: 3rem;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+/* Takes care of the slideshow */
+@keyframes cycleImages {
+	25%{
+		opacity: 1;
+	}
+	40%{
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 780px) {
+
+	.slideshow-item-text{
+		max-width: 100%;
+		padding: 20px 10px;
+		top: initial;
+		bottom: 60px;
+		transform: initial;
+	}
+	.slideshow-item-text h5{
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.slideshow-item-text{
+		max-width: 70%;
+		padding: 20px 10px;
+	}
+	.slideshow-item-text h5{
+		font-size: 2rem;
+	}
+
+}
+/* --------- Main ------------- */
+
+#MainContents {
+	margin: auto;
+	text-align: center;
+}
+
+#InfoServeImg{
+    display: block;
+    width: 100%;
+    height: 1000px;
+}
+
+.row {
+    display: flex;
+    margin: 0px;
+}
+
+.column {
+	flex: 25%;
+	max-width: 33.33%;
+	position: relative;
+}
+
+.column img {
+	margin-top: 0px;
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:rgba(156, 156, 156, 0.8);
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.container {
+	flex: 25%;
+	margin-left: auto;
+  	margin-right: auto;
+	position: relative;
+    width: 100%;
+    margin-bottom: 0px;
+    height: 1000px;
+}
+
+.container:hover .overlay
+{
+	opacity: 1;
+	height: 100%;
+}
+
+/* --------------------------- ATTRACTIONS PAGE -------------------------- */
+
+/* -----------This is for the Header ---------- */
+.content-wrapper
+{
+    width: 100%;
+}
+
+.content-wrapper img
+{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.text-wrapper
+{
+    width: 100%;
+    position: absolute;
+    margin-top: -20%
+}
+
+.text-wrapper h1
+{
+    text-align: center;
+    color: #000000;
+    font-size: 6vw;
+}
+
+/* ---------------- This is for the 2 Events -------------- */
+.eventcontainer
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.eventcontainer .eventcard
+{
+    position: relative;
+    max-width: 450px;
+    background: #8B0000;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+}
+
+.eventcontainer .eventcard .imagebox
+{
+    max-width: 150px;
+    flex: 0 0 150px;
+}
+
+.eventcontainer .eventcard .imagebox img
+{
+    max-width: 100%;
+}
+
+.eventcontainer .eventcard .contentbox
+{
+    margin-left: 20px;
+}
+
+@media (max-width: 991px)
+{
+    .eventcontainer
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .eventcontainer
+    {
+        flex-direction: column;
+    }
+    .eventcontainer .eventcard
+    {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .eventcontainer .eventcard .imagebox
+    {
+        max-width:100%;
+    }
+
+    .eventcontainer .eventcard .contentbox
+    {
+        margin-left: 0px;
+    }
+}
